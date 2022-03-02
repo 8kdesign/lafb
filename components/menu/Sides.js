@@ -1,6 +1,6 @@
 import { Container, Col, Row } from "react-bootstrap";
 
-export default function () {
+export default function Sides() {
 	return (
 		<Container>
 			<Row style={{ margin: 0, padding: 20 }}>

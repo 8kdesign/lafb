@@ -1,7 +1,6 @@
 import { Container, Col, Row } from "react-bootstrap";
-import { NutFill } from "react-bootstrap-icons";
 
-export default function () {
+export default function Desserts() {
 	return (
 		<Container>
 			<Row style={{ margin: 0, padding: 20 }}>
