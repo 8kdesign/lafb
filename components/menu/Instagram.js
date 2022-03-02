@@ -56,17 +56,20 @@ export default function Instagram() {
 							Browse this IG account and let us know if you like
 							anything (min. 5 pax order)
 						</p>
-						<div className="Toggle" style={{ background: "white" }}>
-							<a
-								className="Text--toggle"
-								style={{ color: "#fe706d" }}
-								href="https://www.instagram.com/tay.cooks/"
-								target="_blank"
-								rel="noreferrer"
+						<a
+							className="Text--toggle"
+							style={{ color: "#fe706d" }}
+							href="https://www.instagram.com/tay.cooks/"
+							target="_blank"
+							rel="noreferrer"
+						>
+							<div
+								className="Toggle"
+								style={{ background: "white" }}
 							>
 								Open in Instagram
-							</a>
-						</div>
+							</div>
+						</a>
 					</Col>
 				</Row>
 			</Container>

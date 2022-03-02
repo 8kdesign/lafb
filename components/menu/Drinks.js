@@ -162,7 +162,7 @@ function ListOptions({ list }) {
 	list.forEach((item) => {
 		itemArray.push(
 			<Col xs={12} sm={6}>
-				<p style={{ margin: 0 }}>• {item}</p>
+				<p style={{ margin: 0, opacity: "75%" }}>• {item}</p>
 			</Col>
 		);
 	});

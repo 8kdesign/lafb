@@ -49,16 +49,15 @@ export default function Location() {
 					>
 						Opening Hours: Tue-Sun, 11:30am to 8pm
 					</p>
-					<div className="Toggle">
-						<a
-							className="Text--toggle"
-							href="https://www.google.com/maps/place/Love+At+First+Bite+Cafe+Toa+Payoh/@1.3362442,103.8489013,15z/data=!4m5!3m4!1s0x0:0x2dc43e909f1ebd5a!8m2!3d1.3362442!4d103.8489013"
-							target="_blank"
-							rel="noreferrer"
-						>
-							Open in Maps
-						</a>
-					</div>
+					<a
+						className="Text--toggle"
+						href="https://www.google.com/maps/place/Love+At+First+Bite+Cafe+Toa+Payoh/@1.3362442,103.8489013,15z/data=!4m5!3m4!1s0x0:0x2dc43e909f1ebd5a!8m2!3d1.3362442!4d103.8489013"
+						target="_blank"
+						rel="noreferrer"
+					>
+						<div className="Toggle">Open in Maps</div>
+					</a>
+					<div className="Buffer--20px" />
 				</Col>
 			</Row>
 		</Container>

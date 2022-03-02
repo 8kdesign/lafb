@@ -74,7 +74,7 @@ function Cards() {
 							style={{
 								margin: "0px 0px 5px 0px",
 								fontSize: 13,
-								opacity: "75%",
+								fontWeight: 500,
 							}}
 						>
 							{item.days}
@@ -83,6 +83,7 @@ function Cards() {
 							style={{
 								margin: 0,
 								fontSize: 17,
+								opacity: "75%",
 							}}
 						>
 							{item.description}
@@ -112,7 +113,7 @@ const items = [
 	},
 	{
 		image: ImageBraised,
-		name: '"BBB" Braised Belly Bowl',
+		name: "'BBB' Braised Belly Bowl",
 		description:
 			"Mouth-watering braised pork and egg on a bed of steamed rice.",
 		days: "*Only on Tues, Thurs, Sat",

@@ -67,10 +67,11 @@ export default function NavBar() {
 								textAlign: "center",
 								paddingLeft: 20,
 								paddingRight: 20,
-								fontSize: 17,
+								fontSize: 20,
+								fontWeight: 500,
 							}}
 						>
-							HOME
+							Home
 						</Nav.Link>
 						<Nav.Link
 							href="/menu"
@@ -79,10 +80,11 @@ export default function NavBar() {
 								textAlign: "center",
 								paddingLeft: 20,
 								paddingRight: 20,
-								fontSize: 17,
+								fontSize: 20,
+								fontWeight: 500,
 							}}
 						>
-							MENU
+							Menu
 						</Nav.Link>
 					</Nav>
 				</Navbar.Collapse>

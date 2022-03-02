@@ -39,6 +39,18 @@ label:focus,
 	opacity: 75%;
 }
 
+.ToggleSocial {
+	width: 30px;
+	height: 30px;
+	margin-left: 10px;
+	margin-right: 10px;
+	color: #212121;
+}
+
+.ToggleSocial:hover {
+	opacity: 75%;
+}
+
 .Text--toggle {
 	color: white;
 	width: auto;
