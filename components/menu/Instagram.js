@@ -12,11 +12,10 @@ export default function Instagram() {
 			>
 				<Row>
 					<Col
-						md={{ span: 2, offset: 1 }}
+						md={{ span: 3, offset: 1 }}
+						lg={{ span: 2, offset: 1 }}
 						style={{
 							padding: 20,
-							display: "flex",
-							justifyContent: "center",
 						}}
 					>
 						<Image
@@ -26,22 +25,21 @@ export default function Instagram() {
 						/>
 					</Col>
 					<Col
-						md={{ span: 8 }}
+						md={{ span: 7 }}
+						lg={{ span: 8 }}
 						style={{
 							padding: 20,
 							display: "flex",
 							flexDirection: "column",
 							justifyContent: "center",
-							alignItems: "center",
 						}}
 					>
 						<p
 							style={{
 								width: "100%",
-								textAlign: "center",
 								fontSize: 40,
 								color: "white",
-								marginBottom: 20,
+								marginBottom: 0,
 								fontWeight: 500,
 							}}
 						>
@@ -50,14 +48,25 @@ export default function Instagram() {
 						<p
 							style={{
 								width: "100%",
-								textAlign: "center",
 								fontSize: 20,
+								marginBottom: 20,
 								color: "white",
 							}}
 						>
 							Browse this IG account and let us know if you like
 							anything (min. 5 pax order)
 						</p>
+						<div className="Toggle" style={{ background: "white" }}>
+							<a
+								className="Text--toggle"
+								style={{ color: "#fe706d" }}
+								href="https://www.instagram.com/tay.cooks/"
+								target="_blank"
+								rel="noreferrer"
+							>
+								Open in Instagram
+							</a>
+						</div>
 					</Col>
 				</Row>
 			</Container>
