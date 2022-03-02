@@ -37,7 +37,12 @@ function Cards({ items }) {
 	const itemArray = [];
 	items.forEach((item) => {
 		itemArray.push(
-			<Col md={6} lg={6} key={item.name} style={{ padding: 10 }}>
+			<Col
+				md={6}
+				lg={6}
+				key={item.name}
+				style={{ padding: "10px 20px 10px 20px" }}
+			>
 				<p
 					style={{
 						margin: "20px 0px 0px 0px",
@@ -67,7 +72,6 @@ function Cards({ items }) {
 
 function ListOptions({ list }) {
 	if (list === undefined || list === null) return null;
-	console.log(list);
 	const itemArray = [];
 	list.forEach((item) => {
 		itemArray.push(

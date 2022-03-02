@@ -1,6 +1,7 @@
 import Head from "next/head";
 import { Container } from "react-bootstrap";
 import Desserts from "../../components/menu/Desserts";
+import Drinks from "../../components/menu/Drinks";
 import Main from "../../components/menu/Main";
 import Sides from "../../components/menu/Sides";
 
@@ -33,7 +34,6 @@ export default function Menu() {
 				<Container>
 					<p
 						style={{
-							width: "100%",
 							fontSize: 40,
 							margin: 20,
 							color: "white",
@@ -46,6 +46,7 @@ export default function Menu() {
 			</div>
 			<div className="Buffer--50px" />
 			<Desserts />
+			<Drinks />
 			<Main />
 			<Sides />
 			<div className="Buffer--50px" />
