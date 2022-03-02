@@ -12,53 +12,78 @@ import ImageSkewers from "../../assets/skewers.jpg";
 
 export default function Main() {
 	return (
-		<>
-			<div
-				className="Color--accent"
-				style={{ padding: "50px 0px 50px 0px" }}
-			>
-				<Container>
+		<Container>
+			<Row style={{ margin: 0, padding: 20 }}>
+				<Col
+					lg={2}
+					style={{
+						flex: 1,
+						display: "flex",
+						flexDirection: "column",
+						padding: 0,
+					}}
+				>
 					<p
 						style={{
 							width: "100%",
-							fontSize: 40,
-							margin: 0,
-							color: "white",
+							fontSize: 35,
+							marginBottom: 0,
+							fontWeight: 500,
 						}}
 					>
-						Our Menu
+						Mains
 					</p>
-				</Container>
-			</div>
-			<Container>
-				<div className="Buffer--50px" />
-				<p
+					<p
+						style={{
+							width: "100%",
+							fontSize: 20,
+							marginBottom: 20,
+						}}
+					>
+						Wed, Fri & Sun
+					</p>
+				</Col>
+				<Col lg={{ span: 9, offset: 1 }} style={{ padding: 0 }}>
+					<Cards items={oddItems} />
+				</Col>
+			</Row>
+			<div className="Line" />
+			<Row style={{ margin: 0, padding: 20 }}>
+				<Col
+					lg={2}
 					style={{
-						width: "100%",
-						fontSize: 25,
-						marginBottom: 20,
-						fontWeight: 500,
+						flex: 1,
+						display: "flex",
+						flexDirection: "column",
+						padding: 0,
 					}}
 				>
-					Mains - Wednesday, Friday & Sunday
-				</p>
-				<Cards items={oddItems} />
-				<div className="Line" />
-				<p
-					style={{
-						width: "100%",
-						fontSize: 25,
-						marginBottom: 20,
-						fontWeight: 500,
-					}}
-				>
-					Mains - Tuesday, Thursday & Saturday
-				</p>
-				<Cards items={evenItems} />
-				<div className="Line" />
-				<div className="Buffer--50px" />
-			</Container>
-		</>
+					<p
+						style={{
+							width: "100%",
+							fontSize: 35,
+							marginBottom: 0,
+							fontWeight: 500,
+						}}
+					>
+						Mains
+					</p>
+					<p
+						style={{
+							width: "100%",
+							fontSize: 20,
+							marginBottom: 20,
+						}}
+					>
+						Tue, Thu & Sat
+					</p>
+				</Col>
+				<Col lg={{ span: 9, offset: 1 }} style={{ padding: 0 }}>
+					<Cards items={evenItems} />
+				</Col>
+			</Row>
+			<div className="Line" />
+		</Container>
 	);
 }
 
@@ -66,12 +91,12 @@ function Cards({ items }) {
 	const itemArray = [];
 	items.forEach((item) => {
 		itemArray.push(
-			<Col md={6} lg={3} style={{ padding: 10 }} key={item.name}>
+			<Col md={6} lg={6} style={{ padding: 10 }} key={item.name}>
 				<div className="Card--menu">
 					<Image src={item.image} layout="responsive" />
 					<p
 						style={{
-							margin: "10px 0px 0px 0px",
+							margin: "20px 0px 0px 0px",
 							fontSize: 20,
 							fontWeight: 700,
 						}}

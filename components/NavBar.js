@@ -44,7 +44,7 @@ export default function NavBar() {
 				zIndex: 5,
 				boxShadow: "0px 0px 1px #aaaaaa",
 				transform: getTranslate(),
-				transition: "0.5s ease-in-out",
+				transition: "0.3s ease-in-out",
 			}}
 		>
 			<Container>

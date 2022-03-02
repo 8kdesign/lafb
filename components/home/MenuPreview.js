@@ -17,6 +17,7 @@ export default function MenuPreview() {
 						fontSize: 40,
 						color: "white",
 						marginBottom: 20,
+						fontWeight: 500,
 					}}
 				>
 					Our Menu
@@ -38,7 +39,7 @@ export default function MenuPreview() {
 						>
 							<p
 								className="Text--toggle"
-								style={{ color: "rgba(145, 144, 105, 1)" }}
+								style={{ color: "black" }}
 							>
 								View More
 							</p>
