@@ -50,6 +50,7 @@ export default function Menu() {
 			<Drinks />
 			<Main />
 			<Sides />
+			<div className="Buffer--50px" />
 			<Instagram />
 		</>
 	);

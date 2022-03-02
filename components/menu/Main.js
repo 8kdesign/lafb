@@ -92,7 +92,7 @@ function Cards({ items }) {
 	items.forEach((item) => {
 		itemArray.push(
 			<Col md={6} lg={6} style={{ padding: 10 }} key={item.name}>
-				<div className="Card--menu">
+				<div style={{ width: "100%", padding: 10 }}>
 					<Image src={item.image} layout="responsive" />
 					<p
 						style={{

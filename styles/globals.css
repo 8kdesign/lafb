@@ -25,26 +25,6 @@ label:focus,
 	box-shadow: none !important;
 }
 
-/* Home */
-
-.Card {
-	width: 100%;
-	background: #333333bd;
-	overflow: hidden;
-	border-radius: 5px;
-}
-
-.CardContent {
-	padding: 0px 20px 15px 20px;
-}
-
-/* Menu */
-
-.Card--menu {
-	width: 100%;
-	padding: 10px;
-}
-
 /* Others */
 
 .Toggle {
@@ -52,6 +32,7 @@ label:focus,
 	padding: 10px 20px 10px 20px;
 	border-radius: 30px;
 	cursor: pointer;
+	background-color: #212121;
 }
 
 .Toggle:hover {

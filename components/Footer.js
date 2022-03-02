@@ -9,7 +9,7 @@ export default function Footer() {
 			}}
 		>
 			<p style={{ opacity: "75%", textAlign: "center", margin: 0 }}>
-				© Love At First Bite
+				© 2022 Love At First Bite
 			</p>
 		</div>
 	);

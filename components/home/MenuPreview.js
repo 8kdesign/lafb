@@ -8,46 +8,38 @@ import Link from "next/link";
 
 export default function MenuPreview() {
 	return (
-		<div className="Color--accent">
-			<Container style={{ padding: 30 }}>
-				<p
-					style={{
-						width: "100%",
-						textAlign: "center",
-						fontSize: 40,
-						color: "white",
-						marginBottom: 20,
-						fontWeight: 500,
-					}}
-				>
-					Our Menu
-				</p>
-				<Row>
-					<Cards />
-				</Row>
-				<div
-					style={{
-						display: "flex",
-						alignItems: "center",
-						justifyContent: "center",
-					}}
-				>
-					<Link href={"/menu"}>
-						<div
-							className="Toggle"
-							style={{ background: "white", marginTop: 20 }}
-						>
-							<p
-								className="Text--toggle"
-								style={{ color: "black" }}
-							>
-								View More
-							</p>
-						</div>
-					</Link>
-				</div>
-			</Container>
-		</div>
+		<Container>
+			<div className="Line" />
+			<div className="Buffer--50px" />
+
+			<p
+				style={{
+					width: "100%",
+					textAlign: "center",
+					fontSize: 40,
+					marginBottom: 20,
+					fontWeight: 500,
+				}}
+			>
+				Our Menu
+			</p>
+			<Row>
+				<Cards />
+			</Row>
+			<div
+				style={{
+					display: "flex",
+					alignItems: "center",
+					justifyContent: "center",
+				}}
+			>
+				<Link href={"/menu"}>
+					<div className="Toggle" style={{ marginTop: 20 }}>
+						<p className="Text--toggle">View More</p>
+					</div>
+				</Link>
+			</div>
+		</Container>
 	);
 }
 
@@ -56,15 +48,24 @@ function Cards() {
 	items.forEach((item) => {
 		cards.push(
 			<Col md={6} lg={3} style={{ padding: 10 }} key={item.name}>
-				<div className="Card" style={{ height: "100%" }}>
+				<div
+					style={{
+						height: "100%",
+						width: "100%",
+						overflow: "hidden",
+					}}
+				>
 					<Image src={item.image} />
-					<div className="CardContent">
+					<div
+						style={{
+							padding: "0px 20px 15px 20px",
+						}}
+					>
 						<p
 							style={{
 								margin: 0,
 								fontSize: 20,
 								fontWeight: 700,
-								color: "white",
 							}}
 						>
 							{item.name}
@@ -74,7 +75,6 @@ function Cards() {
 								margin: "0px 0px 5px 0px",
 								fontSize: 13,
 								opacity: "75%",
-								color: "white",
 							}}
 						>
 							{item.days}
@@ -83,7 +83,6 @@ function Cards() {
 							style={{
 								margin: 0,
 								fontSize: 17,
-								color: "white",
 							}}
 						>
 							{item.description}

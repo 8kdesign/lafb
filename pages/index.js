@@ -27,6 +27,7 @@ export default function Home() {
 			<Location />
 			<div className="Buffer--50px" />
 			<MenuPreview />
+			<div className="Buffer--50px" />
 		</div>
 	);
 }
