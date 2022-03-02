@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { Row, Col, Container } from "react-bootstrap";
-import ImageStore from "../assets/store.jpg";
+import ImageStore from "../../assets/store.jpg";
 
 export default function Location() {
 	return (
@@ -15,7 +15,7 @@ export default function Location() {
 							boxShadow: "0px 0px 20px #aaaaaa",
 						}}
 					>
-						<Image src={ImageStore} layout="responsive" />
+						<Image src={ImageStore} layout="responsive" priority />
 					</div>
 				</Col>
 

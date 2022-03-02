@@ -1,9 +1,9 @@
 import Image from "next/image";
 import { Col, Container, Row } from "react-bootstrap";
-import ImageMeeRebus from "../assets/meerebus.jpg";
-import ImageWoosen from "../assets/goongobwoosen.jpg";
-import ImageBraised from "../assets/braised.jpg";
-import ImageNgohHiang from "../assets/ngohhiang.jpg";
+import ImageMeeRebus from "../../assets/meerebus.jpg";
+import ImageWoosen from "../../assets/goongobwoosen.jpg";
+import ImageBraised from "../../assets/braised.jpg";
+import ImageNgohHiang from "../../assets/ngohhiang.jpg";
 import Link from "next/link";
 
 export default function MenuPreview() {
@@ -54,7 +54,7 @@ function Cards() {
 	const cards = [];
 	items.forEach((item) => {
 		cards.push(
-			<Col md={6} lg={3} style={{ padding: 10 }}>
+			<Col md={6} lg={3} style={{ padding: 10 }} key={item.name}>
 				<div className="Card" style={{ height: "100%" }}>
 					<Image src={item.image} />
 					<div className="CardContent">

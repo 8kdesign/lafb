@@ -58,6 +58,10 @@ label:focus,
 	text-decoration: none;
 }
 
+.Text--toggle:hover {
+	color: white;
+}
+
 .Buffer--50px {
 	height: 50px;
 	width: 50px;
