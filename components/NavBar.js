@@ -1,9 +1,34 @@
 import Image from "next/image";
 import Link from "next/link";
+import { useEffect, useState } from "react";
 import { Container, Nav, Navbar } from "react-bootstrap";
 import ImageLogo from "../assets/lafb_light.png";
 
+var previousY = 0;
+
 export default function NavBar() {
+	const [show, setShow] = useState(true);
+
+	useEffect(() => {
+		function checkHide() {
+			const newY = window.scrollY;
+			if (newY > 88 && newY >= previousY) {
+				setShow(false);
+			} else {
+				setShow(true);
+			}
+			previousY = newY;
+		}
+		window.addEventListener("scroll", checkHide);
+		return () => {
+			window.removeEventListener("scroll", checkHide);
+		};
+	}, []);
+
+	if (!show) {
+		return <></>;
+	}
+
 	return (
 		<Navbar
 			expand="lg"
