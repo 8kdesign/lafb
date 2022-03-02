@@ -25,8 +25,12 @@ export default function NavBar() {
 		};
 	}, []);
 
-	if (!show) {
-		return <></>;
+	function getTranslate() {
+		if (show) {
+			return "translateY(-0px)";
+		} else {
+			return "translateY(-100px)";
+		}
 	}
 
 	return (
@@ -38,6 +42,9 @@ export default function NavBar() {
 				top: 0,
 				width: "100%",
 				zIndex: 5,
+				boxShadow: "0px 0px 1px #aaaaaa",
+				transform: getTranslate(),
+				transition: "0.5s ease-in-out",
 			}}
 		>
 			<Container>
