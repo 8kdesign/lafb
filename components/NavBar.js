@@ -29,7 +29,7 @@ export default function NavBar() {
 		if (show) {
 			return "translateY(-0px)";
 		} else {
-			return "translateY(-100px)";
+			return "translateY(-300px)";
 		}
 	}
 
