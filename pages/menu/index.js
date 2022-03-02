@@ -2,6 +2,7 @@ import Head from "next/head";
 import { Container } from "react-bootstrap";
 import Desserts from "../../components/menu/Desserts";
 import Drinks from "../../components/menu/Drinks";
+import Instagram from "../../components/menu/Instagram";
 import Main from "../../components/menu/Main";
 import Sides from "../../components/menu/Sides";
 
@@ -49,7 +50,7 @@ export default function Menu() {
 			<Drinks />
 			<Main />
 			<Sides />
-			<div className="Buffer--50px" />
+			<Instagram />
 		</>
 	);
 }

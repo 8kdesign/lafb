@@ -101,3 +101,12 @@ label:focus,
 		rgb(92, 92, 92) 100%
 	);
 }
+
+.Color--instagram {
+	background: rgb(252, 227, 59);
+	background: linear-gradient(
+		130deg,
+		rgba(252, 227, 59, 1) 0%,
+		rgba(255, 33, 142, 1) 100%
+	);
+}
