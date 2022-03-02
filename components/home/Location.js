@@ -12,7 +12,7 @@ export default function Location() {
 				>
 					<div
 						style={{
-							boxShadow: "0px 0px 20px #aaaaaa",
+							boxShadow: "0px 0px 10px #aaaaaa",
 						}}
 					>
 						<Image src={ImageStore} layout="responsive" priority />

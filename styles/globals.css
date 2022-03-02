@@ -25,18 +25,27 @@ label:focus,
 	box-shadow: none !important;
 }
 
-/* Others */
+/* Home */
 
 .Card {
 	width: 100%;
-	background: rgb(250, 255, 247);
+	background: rgb(131, 133, 106);
 	overflow: hidden;
 	border-radius: 5px;
 }
 
 .CardContent {
-	padding: 0px 20px 10px 20px;
+	padding: 0px 20px 15px 20px;
 }
+
+/* Menu */
+
+.Card--menu {
+	width: 100%;
+	padding: 10px;
+}
+
+/* Others */
 
 .Toggle {
 	width: fit-content;
@@ -60,6 +69,18 @@ label:focus,
 
 .Text--toggle:hover {
 	color: white;
+}
+
+.Line {
+	height: 1px;
+	background-color: #eeeeee;
+	width: 100%;
+	margin: 20px 0px 20px 0px;
+}
+
+.Buffer--20px {
+	height: 20px;
+	width: 20px;
 }
 
 .Buffer--50px {

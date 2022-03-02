@@ -63,7 +63,7 @@ function Cards() {
 								margin: 0,
 								fontSize: 20,
 								fontWeight: 700,
-								color: "#585c48",
+								color: "white",
 							}}
 						>
 							{item.name}
@@ -73,7 +73,7 @@ function Cards() {
 								margin: "0px 0px 5px 0px",
 								fontSize: 13,
 								opacity: "75%",
-								color: "#585c48",
+								color: "white",
 							}}
 						>
 							{item.days}
@@ -82,7 +82,7 @@ function Cards() {
 							style={{
 								margin: 0,
 								fontSize: 17,
-								color: "#585c48",
+								color: "white",
 							}}
 						>
 							{item.description}
