@@ -59,10 +59,12 @@ export default function NavBar() {
 					style={{ outline: "none", border: "none" }}
 				/>
 				<Navbar.Collapse className="justify-content-end">
-					<Nav style={{ display: "flex", alignItems: "center" }}>
+					<Nav>
 						<Nav.Link
 							href="/"
 							style={{
+								width: "100%",
+								textAlign: "center",
 								paddingLeft: 20,
 								paddingRight: 20,
 								fontSize: 17,
@@ -73,6 +75,8 @@ export default function NavBar() {
 						<Nav.Link
 							href="/menu"
 							style={{
+								width: "100%",
+								textAlign: "center",
 								paddingLeft: 20,
 								paddingRight: 20,
 								fontSize: 17,
