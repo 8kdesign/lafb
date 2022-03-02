@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import { Container, Nav, Navbar } from "react-bootstrap";
+import ImageLogo from "../assets/lafb_light.png";
 
 var previousY = 0;
 
@@ -11,7 +12,7 @@ export default function NavBar() {
 	useEffect(() => {
 		function checkHide() {
 			const newY = window.scrollY;
-			if (newY > 71 && newY >= previousY) {
+			if (newY > 88 && newY >= previousY) {
 				setShow(false);
 			} else {
 				setShow(true);
@@ -48,7 +49,9 @@ export default function NavBar() {
 		>
 			<Container>
 				<Link href="/">
-					<div className="Logo" />
+					<Navbar.Brand style={{ cursor: "pointer" }}>
+						<Image src={ImageLogo} height={55} width={87} />
+					</Navbar.Brand>
 				</Link>
 
 				<Navbar.Toggle

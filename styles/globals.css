@@ -47,20 +47,6 @@ label:focus,
 
 /* Others */
 
-.Logo {
-	height: 55px;
-	width: 87px;
-	background-image: url("/lafb_light.png");
-	background-size: 87px 55px;
-	image-rendering: crisp-edges;
-	-ms-interpolation-mode: nearest-neighbor;
-	cursor: pointer;
-}
-
-.Logo:hover {
-	background-image: url("/lafb.png");
-}
-
 .Toggle {
 	width: fit-content;
 	padding: 10px 20px 10px 20px;
