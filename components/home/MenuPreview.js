@@ -47,7 +47,7 @@ function Cards() {
 	const cards = [];
 	items.forEach((item) => {
 		cards.push(
-			<Col md={6} lg={3} style={{ padding: 10 }} key={item.name}>
+			<Col sm={6} lg={3} style={{ padding: 10 }} key={item.name}>
 				<div
 					style={{
 						height: "100%",

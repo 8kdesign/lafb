@@ -29,6 +29,7 @@ label:focus,
 
 .Toggle {
 	width: fit-content;
+	height: fit-content;
 	padding: 10px 20px 10px 20px;
 	border-radius: 30px;
 	cursor: pointer;
@@ -58,6 +59,7 @@ label:focus,
 	margin: 0px;
 	font-weight: 500;
 	text-decoration: none;
+	white-space: nowrap;
 }
 
 .Text--toggle:hover {
@@ -102,4 +104,8 @@ label:focus,
 		rgba(252, 227, 59, 1) 0%,
 		rgba(255, 33, 142, 1) 100%
 	);
+}
+
+.Banner {
+	filter: blur(3px) brightness(80%);
 }

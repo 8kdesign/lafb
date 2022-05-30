@@ -7,7 +7,7 @@ export default function Location() {
 		<Container>
 			<Row>
 				<Col
-					lg={{ span: 5, offset: 1 }}
+					md={{ span: 5, offset: 1 }}
 					style={{ padding: "0px 20px 0px 20px" }}
 				>
 					<div
@@ -20,7 +20,7 @@ export default function Location() {
 				</Col>
 
 				<Col
-					lg={{ span: 5 }}
+					md={{ span: 5 }}
 					style={{
 						padding: 20,
 						display: "flex",
