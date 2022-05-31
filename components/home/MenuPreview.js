@@ -9,9 +9,6 @@ import Link from "next/link";
 export default function MenuPreview() {
 	return (
 		<Container>
-			<div className="Line" />
-			<div className="Buffer--50px" />
-
 			<p
 				style={{
 					width: "100%",

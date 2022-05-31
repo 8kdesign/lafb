@@ -2,34 +2,31 @@ import { Container, Row, Col } from "react-bootstrap";
 
 export default function Drinks() {
 	return (
-		<Container>
-			<Row style={{ margin: 0, padding: 20 }}>
-				<Col
-					lg={2}
+		<Row style={{ margin: 0, padding: 20 }}>
+			<Col
+				lg={2}
+				style={{
+					flex: 1,
+					display: "flex",
+					flexDirection: "column",
+					padding: 0,
+				}}
+			>
+				<p
 					style={{
-						flex: 1,
-						display: "flex",
-						flexDirection: "column",
-						padding: 0,
+						width: "100%",
+						fontSize: 35,
+						marginBottom: 0,
+						fontWeight: 500,
 					}}
 				>
-					<p
-						style={{
-							width: "100%",
-							fontSize: 35,
-							marginBottom: 0,
-							fontWeight: 500,
-						}}
-					>
-						Drinks
-					</p>
-				</Col>
-				<Col lg={{ span: 9, offset: 1 }} style={{ padding: 0 }}>
-					<Cards items={drinks} />
-				</Col>
-			</Row>
-			<div className="Line" />
-		</Container>
+					Drinks
+				</p>
+			</Col>
+			<Col lg={{ span: 9, offset: 1 }} style={{ padding: 0 }}>
+				<Cards items={drinks} />
+			</Col>
+		</Row>
 	);
 }
 
@@ -120,6 +117,7 @@ function TemperatureLabels({ hot, cold }) {
 					fontSize: 13,
 					fontWeight: 500,
 				}}
+				key="Hot"
 			>
 				Hot
 			</p>
@@ -137,6 +135,7 @@ function TemperatureLabels({ hot, cold }) {
 					fontSize: 13,
 					fontWeight: 500,
 				}}
+				key="Cold"
 			>
 				Cold
 			</p>
@@ -161,7 +160,7 @@ function ListOptions({ list }) {
 	const itemArray = [];
 	list.forEach((item) => {
 		itemArray.push(
-			<Col xs={12} sm={6}>
+			<Col xs={12} sm={6} key={item}>
 				<p style={{ margin: 0, opacity: "75%" }}>• {item}</p>
 			</Col>
 		);

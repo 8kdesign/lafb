@@ -1,4 +1,4 @@
-import { Container, Row, Col } from "react-bootstrap";
+import { Row, Col } from "react-bootstrap";
 import Image from "next/image";
 
 import ImageMeeRebus from "../../assets/meerebus.jpg";
@@ -12,7 +12,7 @@ import ImageSkewers from "../../assets/skewers.jpg";
 
 export default function Main() {
 	return (
-		<Container>
+		<>
 			<Row style={{ margin: 0, padding: 20 }}>
 				<Col
 					lg={2}
@@ -82,8 +82,7 @@ export default function Main() {
 					<Cards items={evenItems} />
 				</Col>
 			</Row>
-			<div className="Line" />
-		</Container>
+		</>
 	);
 }
 
@@ -92,7 +91,7 @@ function Cards({ items }) {
 	items.forEach((item) => {
 		itemArray.push(
 			<Col md={6} lg={6} style={{ padding: 10 }} key={item.name}>
-				<div style={{ width: "100%", padding: 10 }}>
+				<div style={{ width: "100%", padding: 20 }}>
 					<Image src={item.image} layout="responsive" />
 					<p
 						style={{

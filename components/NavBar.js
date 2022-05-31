@@ -50,7 +50,7 @@ export default function NavBar() {
 			<Container>
 				<Link href="/">
 					<Navbar.Brand style={{ cursor: "pointer" }}>
-						<Image src={ImageLogo} height={55} width={87} />
+						<Image src={ImageLogo} height={44} width={64.8} />
 					</Navbar.Brand>
 				</Link>
 
@@ -67,7 +67,7 @@ export default function NavBar() {
 								textAlign: "center",
 								paddingLeft: 20,
 								paddingRight: 20,
-								fontSize: 20,
+								fontSize: 17,
 								fontWeight: 500,
 							}}
 						>
@@ -80,7 +80,7 @@ export default function NavBar() {
 								textAlign: "center",
 								paddingLeft: 20,
 								paddingRight: 20,
-								fontSize: 20,
+								fontSize: 17,
 								fontWeight: 500,
 							}}
 						>

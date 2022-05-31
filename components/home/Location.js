@@ -10,13 +10,15 @@ export default function Location() {
 					md={{ span: 5, offset: 1 }}
 					style={{ padding: "0px 20px 0px 20px" }}
 				>
-					<div
+					<Image
+						src={ImageStore}
+						layout="responsive"
+						priority
+						id="StoreImage"
 						style={{
 							boxShadow: "0px 0px 10px #aaaaaa",
 						}}
-					>
-						<Image src={ImageStore} layout="responsive" priority />
-					</div>
+					/>
 				</Col>
 
 				<Col

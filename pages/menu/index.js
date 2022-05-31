@@ -8,7 +8,7 @@ import Sides from "../../components/menu/Sides";
 
 export default function Menu() {
 	return (
-		<>
+		<div style={{ background: "white" }}>
 			<Head>
 				<title>Menu | Love At First Bite Cafe</title>
 				<meta
@@ -28,6 +28,7 @@ export default function Menu() {
 					content="Cozy & air-conditioned cafe in Toa Payoh."
 				/>
 			</Head>
+			<div style={{ height: 77, width: "100%" }} />
 			<div
 				className="Color--accent"
 				style={{ padding: "50px 0px 50px 0px" }}
@@ -45,13 +46,18 @@ export default function Menu() {
 					</p>
 				</Container>
 			</div>
-			<div className="Buffer--50px" />
-			<Desserts />
-			<Drinks />
-			<Main />
-			<Sides />
-			<div className="Buffer--50px" />
+			<Container>
+				<div className="Buffer--50px" />
+				<Desserts />
+				<div className="Line" />
+				<Drinks />
+				<div className="Line" />
+				<Main />
+				<div className="Line" />
+				<Sides />
+				<div className="Buffer--50px" />
+			</Container>
 			<Instagram />
-		</>
+		</div>
 	);
 }

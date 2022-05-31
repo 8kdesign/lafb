@@ -9,6 +9,7 @@ export default function Footer() {
 				flexDirection: "column",
 				alignItems: "center",
 				justifyContent: "center",
+				background: "white",
 			}}
 		>
 			<div

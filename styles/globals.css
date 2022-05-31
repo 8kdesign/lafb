@@ -107,5 +107,5 @@ label:focus,
 }
 
 .Banner {
-	filter: blur(3px) brightness(80%);
+	opacity: 0.8;
 }

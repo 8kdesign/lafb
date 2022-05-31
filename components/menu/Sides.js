@@ -1,34 +1,32 @@
-import { Container, Col, Row } from "react-bootstrap";
+import { Col, Row } from "react-bootstrap";
 
 export default function Sides() {
 	return (
-		<Container>
-			<Row style={{ margin: 0, padding: 20 }}>
-				<Col
-					lg={2}
+		<Row style={{ margin: 0, padding: 20 }}>
+			<Col
+				lg={2}
+				style={{
+					flex: 1,
+					display: "flex",
+					flexDirection: "column",
+					padding: 0,
+				}}
+			>
+				<p
 					style={{
-						flex: 1,
-						display: "flex",
-						flexDirection: "column",
-						padding: 0,
+						width: "100%",
+						fontSize: 35,
+						marginBottom: 0,
+						fontWeight: 500,
 					}}
 				>
-					<p
-						style={{
-							width: "100%",
-							fontSize: 35,
-							marginBottom: 0,
-							fontWeight: 500,
-						}}
-					>
-						Sides
-					</p>
-				</Col>
-				<Col lg={{ span: 9, offset: 1 }} style={{ padding: 0 }}>
-					<Cards items={sides} />
-				</Col>
-			</Row>
-		</Container>
+					Sides
+				</p>
+			</Col>
+			<Col lg={{ span: 9, offset: 1 }} style={{ padding: 0 }}>
+				<Cards items={sides} />
+			</Col>
+		</Row>
 	);
 }
 

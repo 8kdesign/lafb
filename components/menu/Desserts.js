@@ -1,35 +1,32 @@
-import { Container, Col, Row } from "react-bootstrap";
+import { Col, Row } from "react-bootstrap";
 
 export default function Desserts() {
 	return (
-		<Container>
-			<Row style={{ margin: 0, padding: 20 }}>
-				<Col
-					lg={2}
+		<Row style={{ margin: 0, padding: 20 }}>
+			<Col
+				lg={2}
+				style={{
+					flex: 1,
+					display: "flex",
+					flexDirection: "column",
+					padding: 0,
+				}}
+			>
+				<p
 					style={{
-						flex: 1,
-						display: "flex",
-						flexDirection: "column",
-						padding: 0,
+						width: "100%",
+						fontSize: 35,
+						marginBottom: 0,
+						fontWeight: 500,
 					}}
 				>
-					<p
-						style={{
-							width: "100%",
-							fontSize: 35,
-							marginBottom: 0,
-							fontWeight: 500,
-						}}
-					>
-						Desserts
-					</p>
-				</Col>
-				<Col lg={{ span: 9, offset: 1 }} style={{ padding: 0 }}>
-					<Cards items={desserts} />
-				</Col>
-			</Row>
-			<div className="Line" />
-		</Container>
+					Desserts
+				</p>
+			</Col>
+			<Col lg={{ span: 9, offset: 1 }} style={{ padding: 0 }}>
+				<Cards items={desserts} />
+			</Col>
+		</Row>
 	);
 }
 
@@ -75,7 +72,7 @@ function ListOptions({ list }) {
 	const itemArray = [];
 	list.forEach((item) => {
 		itemArray.push(
-			<Col xs={12} sm={6}>
+			<Col xs={12} sm={6} key={item}>
 				<p style={{ margin: 0, opacity: "75%" }}>• {item}</p>
 			</Col>
 		);
